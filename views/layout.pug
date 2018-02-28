@@ -1,0 +1,164 @@
+doctype html
+html
+  head
+  meta(charset='utf-8')
+  title Curriculum Vitae
+  link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
+  script(src='/javascripts/Chart.min.js')
+
+  body
+    block content
+
+     header
+  .container(style='background: #0C8')
+    .row
+      h3.text-center(style='color: white; position: relative;top: 100px;')
+        strong Alex Yovany Santiago Ramirez
+      .col-md-12
+        img.img-circle(src='images/IMG_8196.jpg' width='150px' heigth='150px' style='position: relative; top: -30px;')
+.container
+  div(clas='row')
+    div(clas='col-md-12')
+      br
+      br
+      br
+      .col-md-3
+        h3.bg-primary
+          strong Contacto:
+        p(style='color: darkgreen; font-family: fantasy; font-size: 22px;')
+          | Direcci&oacute;n:
+        p(style='font-family: inherit; font-size: 18px')
+          | Col. Santa Isabel
+          br
+          |     Calle Rosales #9 Jaltipan De Morelos Ver.
+        p(style='color: crimson; font-family: fantasy; font-size: 22px;')
+          | Fecha de Nacimiento:
+        p(style='font-family: inherit; font-size: 18px')
+          | 22 de Agosto de 1996
+        p(style='color: orange; font-family: fantasy; font-size: 22px;')
+          | Celular:
+        p(style='font-family: inherit; font-size: 18px')
+          | 922 106 0246
+        p(style='color: skyblue; font-family: fantasy; font-size: 22px;')
+          | Contacto de emergencia:
+        p(style='font-family: inherit; font-size: 18px')
+          | Mar&iacute;a del Carmen Ramirez Hernandez.
+          br
+          br
+          |     922 145 9090
+        p(style='color: orange; font-family: fantasy; font-size: 22px;')
+          | E-mail:
+        p(style='font-family: inherit; font-size: 18px')
+          | alexfenixdk@gmail.com
+        p(style='color: cyan; font-family: fantasy; font-size: 22px;')
+          | Facebook
+        p(style='font-family: inherit; font-size: 18px')
+          | fb.com/alexgrillo.figueroa
+        h3(style='background: red; color: white;')
+          strong Acerca de:
+        p(style='font-family: inherit; font-size: 18px')
+          | En estos momentos soy alumno del ITSA(Instituto Tecnologico Superior de Acayucan), curso el Octavo semestre de la carrera Ing. En Sistemas Computacionales la cual consta de 9 semestres.
+          br
+          |     Me considero un alumno regular y una persona que se ha sabido adaptar a los cambios que ha tenido en la vida.
+        h3(style='background: darkcyan; color: white;')
+          strong Hobies:
+        .container
+          div(clas='row')
+            img.img-circle(src='images/futbol.jfif' width='50px' height='50px' style='position: relative;')
+            img.img-circle(src='images/musica.png' width='50px' height='50px' style='position: relative; left:20px;')
+            img.img-circle(src='images/video.png' width='50px' height='50px' style='position: relative; left:40px;')
+      .col-md-3.col-md-offset-4
+        h3(style='background: green; color: white')
+          strong Cursos:
+        p(style='font-family: inherit; font-size: 18px')
+          | 3/12/2014 al 4/12/2014
+          br
+          |  Primer Congreso Nacional de Lideres en Tecnologias Empresariales
+          br
+          |     19/01/2015 al 23/01/2015 Curso de Phyton
+        h3(style='background: gray; color: white')
+          strong Otros:
+        canvas#myChart1(width='600' height='400')
+        script.
+          var ctx = document.getElementById("myChart1").getContext('2d');
+          var myChart = new Chart(ctx, {
+          type: 'horizontalBar',
+          data: {
+          labels: ["HTML", "Corel Draw", "Blender", "VRML"],
+          datasets: [{
+          label: 'Nivel de conocimiento del lenguaje',
+          data: [15, 8, 6, 10],
+          backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)'
+          ],
+          borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)'
+          ],
+          borderWidth: 1
+          }]
+          },
+          options: {
+          scales: {
+          yAxes: [{
+          ticks: {
+          beginAtZero:true
+          }
+          }]
+          }
+          }
+          });
+        h3(style='background: orange; color: white')
+          strong Programaci&oacute;n:
+        canvas#myChart(width='600' height='400')
+        script.
+          var ctx = document.getElementById("myChart").getContext('2d');
+          var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+          labels: ["Java", "JavaScript", "VB.NET", "Python"],
+          datasets: [{
+          label: 'Nivel de conocimiento del lenguaje',
+          data: [15, 10, 12, 8],
+          backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)'
+          ],
+          borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)'
+          ],
+          borderWidth: 1
+          }]
+          },
+          options: {
+          scales: {
+          yAxes: [{
+          ticks: {
+          beginAtZero:true
+          }
+          }]
+          }
+          }
+          });
+        h3(style='background: blue; color: white')
+          strong Educaci&oacute;n:
+        p(style='font-family: inherit; font-size: 18px')
+          |                                 2008-2011 Sec. Gral. Lic. Adolfo Lopez Mateos
+          br
+          |                                 2011-2012 C.B.T.I.S 250
+          br
+          |                                 2012-2014 UPAV Bachiller Sede Jaltipan
+
+          br
+          |                                 2014-2018 Instituto Tecnologico Superior De Acayucan
+
